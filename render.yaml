@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vision-lock-biometrics
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8000

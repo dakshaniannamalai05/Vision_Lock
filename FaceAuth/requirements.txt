@@ -1,0 +1,5 @@
+opencv-contrib-python>=4.8.0
+dlib-bin>=20.0.0
+torch>=2.0.0
+numpy>=1.24.0
+pillow>=9.0.0

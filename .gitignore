@@ -1,0 +1,17 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Large files (>99MB) that exceed GitHub file size limit
+FaceAuth/shape_predictor_68_face_landmarks.dat
+*.dat
+
+# Environments & OS
+.env
+.venv
+env/
+venv/
+.DS_Store
+Thumbs.db

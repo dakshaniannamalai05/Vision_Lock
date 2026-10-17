@@ -1,0 +1,8 @@
+{
+    "architecture": "VisionLockCNN",
+    "validation_accuracy": 100.0,
+    "target_accuracy": "98.0%",
+    "training_time_sec": 66.48,
+    "total_classes": 6,
+    "device": "cpu"
+}
