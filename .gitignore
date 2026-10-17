@@ -15,3 +15,7 @@ env/
 venv/
 .DS_Store
 Thumbs.db
+
+# Embedded dlib submodule (dlib is installed via pip)
+FaceAuth/dlib/
+
