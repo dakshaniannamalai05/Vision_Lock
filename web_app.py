@@ -887,8 +887,10 @@ def index_page():
 
 if __name__ == "__main__":
     import uvicorn
+    port = int(os.environ.get("PORT", 8000))
     print("\n=======================================================")
     print("🚀 VISION LOCK: Web API & Biometric Dashboard")
-    print("👉 Open your browser at: http://localhost:8000")
+    print(f"👉 Open your browser at: http://localhost:{port}")
     print("=======================================================\n")
-    uvicorn.run("web_app:app", host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run("web_app:app", host="0.0.0.0", port=port, reload=False)
+
