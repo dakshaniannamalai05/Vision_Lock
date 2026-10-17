@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-# Install system dependencies required by OpenCV and Dlib
+# Install system dependencies required by OpenCV, Dlib, and Tk
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     cmake \
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libsm6 \
     libxext6 \
     libxrender-dev \
+    python3-tk \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app

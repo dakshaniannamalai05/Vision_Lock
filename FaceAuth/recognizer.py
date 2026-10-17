@@ -6,7 +6,18 @@ import random
 import time
 import os
 import sys
-from tkinter import messagebox
+try:
+    from tkinter import messagebox
+except (ImportError, ModuleNotFoundError):
+    class DummyMessageBox:
+        @staticmethod
+        def showinfo(title, msg): print(f"[INFO] {title}: {msg}")
+        @staticmethod
+        def showwarning(title, msg): print(f"[WARNING] {title}: {msg}")
+        @staticmethod
+        def showerror(title, msg): print(f"[ERROR] {title}: {msg}")
+    messagebox = DummyMessageBox()
+
 import torch
 import torch.nn.functional as F
 
